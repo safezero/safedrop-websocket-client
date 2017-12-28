@@ -1,0 +1,31 @@
+{
+  "name": "safedrop-websocket-client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js --bail && webpack -d && chrome http://localhost:5000/test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafeMarket/safedrop-websocket-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SafeMarket/safedrop-websocket-client/issues"
+  },
+  "homepage": "https://github.com/SafeMarket/safedrop-websocket-client#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "defunction": "^4.0.4",
+    "mocha": "^4.0.1",
+    "ws": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "browser": {
+    "ws": "./WebSocket"
+  }
+}
